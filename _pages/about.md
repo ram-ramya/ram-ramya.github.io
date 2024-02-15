@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Scientist, <a href='#'>ASAPP</a>
+subtitle: `ram dot ramya at gmail dot com`
 
 profile:
   align: right
   image: profile_pic1.jpg
   image_circular: true # crops the image to make it circular
-  more_info:
+  more_info: Research Scientist, <a href='https://www.asapp.com/blog?topic=AI+Research'>ASAPP</a>
 
 news: false # includes a list of news items
 latest_posts: false # includes a list of the newest posts
