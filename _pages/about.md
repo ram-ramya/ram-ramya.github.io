@@ -7,7 +7,7 @@ subtitle: Research Scientist, <a href='#'>ASAPP</a>
 profile:
   align: right
   image: profile_pic1.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info:
 
 news: false # includes a list of news items
