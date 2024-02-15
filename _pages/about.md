@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: ram dot ramya at gmail dot com
+subtitle: `ram dot ramya at gmail dot com`
 
 profile:
   align: right
