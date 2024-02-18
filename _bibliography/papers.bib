@@ -6,7 +6,7 @@
   author={Min, Do June and Sodhi, Paloma and Ramakrishnan, Ramya},
   journal={arXiv preprint arXiv:2311.08300},
   year={2023},
-  url={https://arxiv.org/url/2311.08300.url},
+  pdf={workflow_response_generation.pdf},
   abstract={Task-oriented dialogue (TOD) systems aim to achieve specific goals through interactive dialogue. Such tasks usually involve following specific workflows, i.e. executing a sequence of actions in a particular order. While prior work has focused on supervised learning methods to condition on past actions, they do not explicitly optimize for compliance to a desired workflow. In this paper, we propose a novel framework based on reinforcement learning (RL) to generate dialogue responses that are aligned with a given workflow. Our framework consists of ComplianceScorer, a metric designed to evaluate how well a generated response executes the specified action, combined with an RL opimization process that utilizes an interactive sampling technique. We evaluate our approach on two TOD datasets, Action-Based Conversations Dataset (ABCD) (Chen et al., 2021a) and MultiWOZ 2.2 (Zang et al., 2020) on a range of automated and human evaluation metrics. Our findings indicate that our RL-based framework outperforms baselines and is effective at enerating responses that both comply with the intended workflows while being expressed in a natural and fluent manner.},
   bibtex_show={true},
   selected={true},
@@ -17,7 +17,7 @@
   author={Ramakrishnan, Ramya and Elenberg, Ethan and Narangodage, Hashan and McDonald, Ryan},
   journal={arXiv preprint arXiv:2311.09593},
   year={2023},
-  url={https://arxiv.org/url/2311.09593.url},
+  pdf={multi_step_action_prediction.pdf},
   abstract={In task-oriented dialogue, a system often needs to follow a sequence of actions, called a workflow, that complies with a set of guidelines in order to complete a task. In this paper, we propose the novel problem of multi-step workflow action prediction, in which the system predicts multiple future workflow actions. Accurate prediction of multiple steps allows for multi-turn automation, which can free up time to focus on more complex tasks. We propose three modeling approaches that are simple to implement yet lead to more action automation: 1) fine-tuning on a training dataset, 2) few-shot in-context learning leveraging retrieval and large language model prompting, and 3) zero-shot graph traversal, which aggregates historical action sequences into a graph for prediction. We show that multi-step action prediction produces features that improve accuracy on downstream dialogue tasks like predicting task success, and can increase automation of steps by 20% without requiring as much feedback from a human overseeing the system.},
   bibtex_show={true},
   selected={true}
@@ -29,7 +29,7 @@
   journal={arXiv preprint arXiv:2205.07352},
   year={2022},
   bibtex_show={true},
-  url={https://aclanthology.org/2022.naacl-main.54.url},
+  pdf={naacl_2022_long_term_control.pdf},
   abstract={Current approaches for controlling dialogue response generation are primarily focused on high-level attributes like style, sentiment, or topic. In this work, we focus on constrained long-term dialogue generation, which involves more fine-grained control and requires a given set of control words to appear in generated responses. This setting requires a model to not only consider the generation of these control words in the immediate context, but also produce utterances that will encourage the generation of the words at some time in the (possibly distant) future. We define the problem of constrained long-term control for dialogue generation, identify gaps in current methods for evaluation, and propose new metrics that better measure long-term control. We also propose a retrieval-augmented method that improves performance of long-term controlled generation via logit modification techniques. We show through experiments on three task-oriented dialogue datasets that our metrics better assess dialogue control relative to current alternatives and that our method outperforms state-of-the-art constrained generation baselines.},
   bibtex_show={true},
   selected={true}
@@ -40,7 +40,7 @@
   author={Ramakrishnan, Ramya and Unhelkar, Vaibhav and Kamar, Ece and Shah, Julie},
   journal={arXiv preprint arXiv:2103.15171},
   year={2021},
-  url={https://arxiv.org/url/2103.15171.url},
+  pdf={bayesian_representation_errors.pdf},
   abstract={Trained AI systems and expert decision makers can make errors that are often difficult to identify and understand. Determining the root cause for these errors can improve future decisions. This work presents Generative Error Model (GEM), a generative model for inferring representational errors based on observations of an actor's behavior (either simulated agent, robot, or human). The model considers two sources of error: those that occur due to representational limitations -- "blind spots" -- and non-representational errors, such as those caused by noise in execution or systematic errors present in the actor's policy. Disambiguating these two error types allows for targeted refinement of the actor's policy (i.e., representational errors require perceptual augmentation, while other errors can be reduced through methods such as improved training or attention support). We present a Bayesian inference algorithm for GEM and evaluate its utility in recovering representational errors on multiple domains. Results show that our approach can recover blind spots of both reinforcement learning agents as well as human users.},
   bibtex_show={true}
 }
@@ -52,7 +52,7 @@
   volume={67},
   pages={191--234},
   year={2020},
-  url={https://d1wqtxts1xzle7.cloudfront.net/71878886/26559-libre.url?1634023724=&response-content-disposition=inline%3B+filename%3DBlind_Spot_Detection_for_Safe_Sim_to_Rea.url&Expires=1708134494&Signature=GQpD7tc~qQDHh8J9wNmSnW6TEd9JpO~A7cU1qoyCznLngpdN9SHqFqFHWZPd3Dz3RSNx1auB13iWjj7mnjHXsPpYvsg1fKAdYu6tDDGnvrZ-G~3VASOCc-0Zl6G7gMYO1jJIDqYJROHyqTST7HTupVz1GXyRMWJ6l0M69gZ--yHmo6t4MoY5vmlL65I97B3k2wSC3sM71yIeILl03r6qqQrNClvhZ1HMLWQMn2FobSEpLkGTxqt84HIgoVoRwt3N35kyepNZtGsoSKfOSB6sPGQD-bj34OMh-LBanjvAK9h-XkQ7wq1RQvI4LNb6roZaOkF2UrG2xSdCkS3B-NJ3Ag__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA},
+  pdf={jair_2020_blind_spot_detection.pdf},
   abstract={Agents trained in simulation may make errors when performing actions in the real world due to mismatches between training and execution environments. These mistakes can be dangerous and difficult for the agent to discover because the agent is unable to predict them a priori. In this work, we propose the use of oracle feedback to learn a predictive model of these blind spots in order to reduce costly errors in real-world applications. We focus on blind spots in reinforcement learning (RL) that occur due to incomplete state representation: when the agent lacks necessary features to represent the true state of the world, and thus cannot distinguish between numerous states. We formalize the problem of discovering blind spots in RL as a noisy supervised learning problem with class imbalance. Our system learns models for predicting blind spots within unseen regions of the state space by combining techniques for label aggregation, calibration, and supervised learning. These models take into consideration noise emerging from different forms of oracle feedback, including demonstrations and corrections. We evaluate our approach across two domains and demonstrate that it achieves higher predictive performance than baseline methods, and also that the learned model can be used to selectively query an oracle at execution time to prevent errors. We also empirically analyze the biases of various feedback types and how these biases influence the discovery of blind spots. Further, we include analyses of our approach that incorporate relaxed initial optimality assumptions. (Interestingly, relaxing the assumptions of an optimal oracle and an optimal simulator policy helped our models to perform better.) We also propose extensions to our method that are intended to improve performance when using corrections and demonstrations data.},
   bibtex_show={true}
 }
@@ -65,7 +65,7 @@
   number={01},
   pages={6137--6145},
   year={2019},
-  url={https://www.researchgate.net/profile/Ramya-Ramakrishnan-6/publication/335426154_Overcoming_Blind_Spots_in_the_Real_World_Leveraging_Complementary_Abilities_for_Joint_Execution/links/611ad0a71e95fe241ad77bd1/Overcoming-Blind-Spots-in-the-Real-World-Leveraging-Complementary-Abilities-for-Joint-Execution.url},
+  pdf={aaai_2019_overcoming_blind_spots.pdf},
   abstract={Simulators are being increasingly used to train agents before deploying them in real-world environments. While training in simulation provides a cost-effective way to learn, poorly modeled aspects of the simulator can lead to costly mistakes, or blind spots. While humans can help guide an agent towards identifying these error regions, humans themselves have blind spots and noise in execution. We study how learning about blind spots of both can be used to manage hand-off decisions when humans and agents jointly act in the real-world in which neither of them are trained or evaluated fully. The formulation assumes that agent blind spots result from representational limitations in the simulation world, which leads the agent to ignore important features that are relevant for acting in the open world. Our approach for blind spot discovery combines experiences collected in simulation with limited human demonstrations. The first step applies imitation learning to demonstration data to identify important features that the human is using but that the agent is missing. The second step uses noisy labels extracted from action mismatches between the agent and the human across simulation and demonstration data to train blind spot models. We show through experiments on two domains that our approach is able to learn a succinct representation that accurately captures blind spot regions and avoids dangerous errors in the real world through transfer of control between the agent and the human.},
   bibtex_show={true}
 }
@@ -75,7 +75,7 @@
   author={Ramakrishnan, Ramya and Kamar, Ece and Dey, Debadeepta and Shah, Julie and Horvitz, Eric},
   journal={arXiv preprint arXiv:1805.08966},
   year={2018},
-  url={https://ifaamas.org/Proceedings/aamas2018/urls/p1017.url},
+  pdf={aamas_2018_discovering_blind_spots.pdf},
   abstract={Agents trained in simulation may make errors in the real world due to mismatches between training and execution environments. These mistakes can be dangerous and difficult to discover because the agent cannot predict them a priori. We propose using oracle feedback to learn a predictive model of these blind spots to reduce costly errors in real-world applications. We focus on blind spots in reinforcement learning (RL) that occur due to incomplete state representation: The agent does not have the appropriate features to represent the true state of the world and thus cannot distinguish among numerous states. We formalize the problem of discovering blind spots in RL as a noisy supervised learning problem with class imbalance. We learn models to predict blind spots in unseen regions of the state space by combining techniques for label aggregation, calibration, and supervised learning. The models take into consideration noise emerging from different forms of oracle feedback, including demonstrations and corrections. We evaluate our approach on two domains and show that it achieves higher predictive performance than baseline methods, and that the learned model can be used to selectively query an oracle at execution time to prevent errors. We also empirically analyze the biases of various feedback types and how they influence the discovery of blind spots.},
   bibtex_show={true}
 }
@@ -87,7 +87,7 @@
   volume={59},
   pages={495--541},
   year={2017},
-  url={https://web.archive.org/web/20180421112540id_/http://www.jair.org/media/5390/live-5390-10069-jair.url},
+  pdf={jair_2017_perturbation_training.pdf},
   abstract={In this work, we design and evaluate a computational learning model that enables a human-robot team to co-develop joint strategies for performing novel tasks that require coordination. The joint strategies are learned through "perturbation training," a human team-training strategy that requires team members to practice variations of a given task to help their team generalize to new variants of that task. We formally define the problem of human-robot perturbation training and develop and evaluate the first end-to-end framework for such training, which incorporates a multi-agent transfer learning algorithm, human-robot co-learning framework and communication protocol. Our transfer learning algorithm, Adaptive Perturbation Training (AdaPT), is a hybrid of transfer and reinforcement learning techniques that learns quickly and robustly for new task variants. We empirically validate the benefits of AdaPT through comparison to other hybrid reinforcement and transfer learning techniques aimed at transferring knowledge from multiple source tasks to a single target task. We also demonstrate that AdaPT's rapid learning supports live interaction between a person and a robot, during which the human-robot team trains to achieve a high level of performance for new task variants. We augment AdaPT with a co-learning framework and a computational bi-directional communication protocol so that the robot can co-train with a person during live interaction. Results from large-scale human subject experiments (n=48) indicate that AdaPT enables an agent to learn in a manner compatible with a human's own learning process, and that a robot undergoing perturbation training with a human results in a high level of team performance. Finally, we demonstrate that human-robot training using AdaPT in a simulation environment produces effective performance for a team incorporating an embodied robot partner.},
   bibtex_show={true}
 }
@@ -98,7 +98,7 @@
   booktitle={Proceedings of the tenth annual ACM/IEEE international conference on human-robot interaction},
   pages={189--196},
   year={2015},
-  url={https://core.ac.uk/download/url/83229494.url},
+  pdf={hri_2015_efficient_model_learning.pdf},
   abstract={We present a framework for automatically learning human user models from joint-action demonstrations that enables a robot to compute a robust policy for a collaborative task with a human. First, the demonstrated action sequences are clustered into different human types using an unsupervised learning algorithm. A reward function is then learned for each type through the employment of an inverse reinforcement learning algorithm. The learned model is then incorporated into a mixed-observability Markov decision process (MOMDP) formulation, wherein the human type is a partially observable variable. With this framework, we can infer online the human type of a new user that was not included in the training set, and can compute a policy for the robot that will be aligned to the preference of this user. In a human subject experiment (n=30), participants agreed more strongly that the robot anticipated their actions when working with a robot incorporating the proposed framework (p<0.01), compared to manually annotating robot actions. In trials where participants faced difficulty annotating the robot actions to complete the task, the proposed framework significantly improved team efficiency (p<0.01). The robot incorporating the framework was also found to be more responsive to human actions compared to policies computed using a hand-coded reward function by a domain expert (p<0.01). These results indicate that learning human user models from joint-action demonstrations and encoding them in a MOMDP formalism can support effective teaming in human-robot collaborative tasks.},
   bibtex_show={true}
 }
@@ -112,7 +112,7 @@
   pages={1711--1730},
   year={2015},
   publisher={SAGE Publications Sage UK: London, England},
-  url={https://www.ri.cmu.edu/pub_files/2015/11/The-International-Journal-of-Robotics-Research-2015-Nikolaidis-1711-30.url},
+  pdf={ijrr_2015_improved_human_robot.pdf},
   abstract={We design and evaluate a method of human–robot cross-training, a validated and widely used strategy for the effective training of human teams. Cross-training is an interactive planning method in which team members iteratively switch roles with one another to learn a shared plan for the performance of a collaborative task. We first present a computational formulation of the robot mental model, which encodes the sequence of robot actions necessary for task completion and the expectations of the robot for preferred human actions, and show that the robot model is quantitatively comparable to the mental model that captures the inter-role knowledge held by the human. Additionally, we propose a quantitative measure of robot mental model convergence and an objective metric of model similarity. Based on this encoding, we formulate a human–robot cross-training method and evaluate its efficacy through experiments involving human subjects. We compare human–robot cross-training to standard reinforcement learning techniques, and show that cross-training yields statistically significant improvements in quantitative team performance measures, as well as significant differences in perceived robot performance and human trust. Finally, we discuss the objective measure of robot mental model convergence as a method to dynamically assess human errors. This study supports the hypothesis that the effective and fluent teaming of a human and a robot may best be achieved by modeling known, effective human teamwork practices.},
   bibtex_show={true}
 }
