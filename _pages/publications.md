@@ -1,14 +1,14 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: selected publications
 description: full list on Google Scholar
 nav: true
 nav_order: 2
 ---
 
 <!-- _pages/publications.md -->
-<div class="selected publications">
+<div class="publications">
 
 {% bibliography %}
 
